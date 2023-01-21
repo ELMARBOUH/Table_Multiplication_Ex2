@@ -11,12 +11,16 @@
         android:id="@+id/et_Number"
         android:layout_width="371dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="21dp"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="numberDecimal"
-        tools:ignore="MissingConstraints,TextFields"
-        tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="71dp"
-        android:autofillHints="" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,TextFields" />
 
     <Button
         android:id="@+id/btn_reinitialiser"
@@ -31,7 +35,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_Number"
-        tools:ignore="MissingConstraints" />
+      />
 
     <Button
         android:id="@+id/btn_Afficher"
@@ -42,7 +46,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_reinitialiser"
-        tools:ignore="MissingConstraints" />
+    />
 
     <Button
         android:id="@+id/btn_quitter"
@@ -52,17 +56,16 @@
         android:text="@string/quitter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UsingOnClickInXml" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/multiplication"
-
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/btn_quitter"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_Afficher"
