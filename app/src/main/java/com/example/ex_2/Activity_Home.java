@@ -9,9 +9,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Switch;
 
+import java.util.Objects;
+
 public class Activity_Home extends AppCompatActivity {
     EditText et_Number;
-    Button btn_reinitialiser , btn_Afficher , btn_quitter ;
+    Button btn_reinitialiser , btn_Afficher , btn_quitter  , txt_result;
 
 
 
@@ -24,11 +26,16 @@ public class Activity_Home extends AppCompatActivity {
         btn_reinitialiser = findViewById(R.id.btn_reinitialiser);
         btn_quitter = findViewById(R.id.btn_quitter);
 
+        Objects.requireNonNull(getSupportActionBar()).setTitle("Table Multiplication");
+
 
         btn_reinitialiser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 et_Number.setText("");
+                txt_result.setText(R.string.multiplication);
+
+
             }
 
         });
