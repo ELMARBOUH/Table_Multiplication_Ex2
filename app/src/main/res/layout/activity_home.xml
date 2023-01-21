@@ -4,4 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity_Home"/>
+    android:padding="20dp"
+    tools:context=".Activity_Home">
+
+    <EditText
+        android:id="@+id/et_Number"
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:ignore="MissingConstraints,TextFields"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="71dp"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/btn_reinitialiser"
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/r_initialiser"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Afficher"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_Number"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_Afficher"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/affchier"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_reinitialiser"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_quitter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/quitter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/multiplication"
+
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_quitter"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Afficher"
+        app:layout_constraintVertical_bias="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>
