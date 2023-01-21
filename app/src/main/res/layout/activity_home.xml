@@ -12,10 +12,11 @@
         android:layout_width="371dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="21dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="68dp"
         android:layout_marginEnd="21dp"
         android:autofillHints=""
         android:ems="10"
+        android:gravity="center"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,33 +27,31 @@
         android:id="@+id/btn_reinitialiser"
         android:layout_width="371dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="21dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="17dp"
-        android:layout_marginBottom="28dp"
         android:text="@string/r_initialiser"
-        app:layout_constraintBottom_toTopOf="@+id/btn_Afficher"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_Number"
-      />
+        app:layout_constraintTop_toBottomOf="@+id/et_Number" />
 
     <Button
         android:id="@+id/btn_Afficher"
-        android:layout_width="0dp"
+        android:layout_width="371dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="17dp"
         android:text="@string/affchier"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_reinitialiser"
-    />
+        app:layout_constraintTop_toBottomOf="@+id/btn_reinitialiser" />
 
     <Button
         android:id="@+id/btn_quitter"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="4dp"
         android:text="@string/quitter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,9 +64,42 @@
         android:layout_height="wrap_content"
         android:text="@string/multiplication"
         android:textSize="20sp"
+        android:gravity="center"
         app:layout_constraintBottom_toTopOf="@+id/btn_quitter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_Afficher"
         app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:background="@color/white"
+        android:layout_marginBottom="27dp"
+        app:layout_constraintBottom_toTopOf="@+id/et_Number"
+        app:layout_constraintStart_toStartOf="parent" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_pink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="27dp"
+        android:background="@color/Pink"
+        android:backgroundTint="@color/Purrple"
+        app:layout_constraintBottom_toTopOf="@+id/et_Number"
+        app:layout_constraintStart_toEndOf="@+id/btn_white" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_purple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="27dp"
+        android:background="@color/Pink"
+        app:layout_constraintBottom_toTopOf="@+id/et_Number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_pink" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
